@@ -1,0 +1,119 @@
+/* nav realated style */
+/* *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+} */
+body{
+       font-family: 'Open Sans', sans-serif;
+}
+header{
+       background-color: #FFF8F3;
+       background-image: url(./images/header_bg.png);
+       background-repeat: no-repeat;
+       background-position: bottom right;
+}
+.nav-container{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 10px 50px 20px 230px;
+}
+.text-praimary{
+       color: #FD6E0A;
+}
+.nav-titel{
+       color: #181818;
+       font-size: 45px;
+       font-weight: 800;
+}
+nav > ul{
+       display: flex;
+      align-items: center;
+      
+}
+nav a{
+       text-decoration: none;
+}
+nav  li{
+       list-style: none;
+       margin-left: 50px;
+    
+}
+.btn-praimary{
+       border-radius: 5px;
+       background: #FD6E0A;
+       border: none;
+       padding: 15px 26px 15px 25px;
+       color: white;
+      
+}
+.baner{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 20px 50px 20px 230px;
+}
+.hardy-pic{
+       width: 584px;
+       height: 674px;
+}
+.btnc{
+       color: #FD6E0A;
+       text-align: center;
+       padding: 15px 26px 15px 25px;
+       margin-left: 18px;
+       background-color: white;
+       border: 1px solid #FD6E0A;
+       border-radius: 4px;
+     
+}
+.section{
+      padding: 110px;
+      background-color: #fff8f3;
+     margin: 110px 200px 110px 200px;
+}
+.about{
+       text-align: center;
+    
+}
+.about-parants{
+       display: flex;
+       justify-content: space-between;
+
+}
+.info-titel{
+       text-align: center;
+       font-size: small;
+}
+.do-section{
+       background: var(--white-color, #FFF);
+       margin: 110px 200px 110px 200px;
+}
+.skill{
+       display: flex; 
+       /* justify-content: space-between; */
+       justify-content: space-around;
+}
+.my-skil{
+       border-radius: 5px;
+       background: #FFF;
+       box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+       /* min-height: 377px; */
+       margin: 15px;
+       padding: 10px;
+      
+}
+.icon-img{
+       text-align: center;
+}
+.education-section{
+       display: flex;
+       justify-content: flex-start;
+       margin: 110px 200px 110px 200px;
+       padding: 10px;
+       gap: 50px;
+}
+.resume-titel{
+       text-align: center;
+}
