@@ -2,16 +2,16 @@
 /* *{
        margin: 0;
        padding: 0;
-       box-sizing: border-box;
 } */
 body{
        font-family: 'Open Sans', sans-serif;
 }
 header{
        background-color: #FFF8F3;
-       background-image: url(./images/header_bg.png);
+       background-image: url(./images/header_bg.png),url(./images/developer.png);
+       /* background-image: url('./images/developer.png'); */
        background-repeat: no-repeat;
-       background-position: bottom right;
+      background-position: bottom right, bottom left;
 }
 .nav-container{
        display: flex;
@@ -58,7 +58,7 @@ nav  li{
        width: 584px;
        height: 674px;
 }
-.btnc{
+.btnc {
        color: #FD6E0A;
        text-align: center;
        padding: 15px 26px 15px 25px;
@@ -67,6 +67,13 @@ nav  li{
        border: 1px solid #FD6E0A;
        border-radius: 4px;
      
+}
+.btn-primary{
+       padding: 8px 26px 8px 25px;
+       background-color: #FD6E0A;
+       color: white;
+       border-radius: 4px;
+       border: none;
 }
 .section{
       padding: 110px;
@@ -144,4 +151,54 @@ footer {
        border: 0;
        width: 100%;
    }
-   
+ 
+   .hide{
+       display: none;
+   } 
+
+   /* mobile devise */
+   @media screen and (max-width:576px) {
+       footer , .education-section , .about-parants,.skill,.nav-container,nav>ul,.baner{
+              flex-direction: column;
+       }
+       .education-section , .section,.do-section{
+              margin-left: -40px;
+              padding: 10px;
+              width: 100%;
+       }
+       .baner,.nav-container{
+              margin: 0;
+              padding: 10px;
+       }
+       /* nav > ul{
+              margin:10px;
+       } */
+       nav  li{
+              margin:5px 0px;
+       }
+       header{
+              background-image: none;
+       }
+       .hardy-pic{
+              width: 100%;
+              height: 80%;
+              margin-top: 30px;
+       }
+       .info-titel{
+              text-align: start;
+       }
+       .resume-titel{
+              width: 90%;
+       }
+       footer{
+              padding: 10px;
+              margin-top: 50px;
+       }
+       .footer-column{
+              width: 100%;
+       }
+       .contact input[type="text"], .contact input[type="email"],
+   textarea{
+              width: 80%;
+       }
+   }
